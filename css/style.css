@@ -57,10 +57,9 @@ body main section {
   z-index: 5;
 }
 body footer {
-  outline: 1px solid green;
+  z-index: 99;
   width: 100%;
-  outline: 1px solid red;
-  height: 4vh;
+  height: 3vh;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -73,24 +72,95 @@ body footer p {
 }
 
 .linksPage {
-  position: relative;
   background: radial-gradient(59.14% 70.68% at 50% 50.04%, #CDCDC3 0%, #8E8E8E 100%);
+  position: relative;
   overflow-x: hidden;
   height: auto;
   min-height: 100vh;
+  width: 100vw;
+}
+.linksPage .SafeImgCover {
   width: 100%;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.5;
+  z-index: -1;
 }
 .linksPage .Background {
-  width: 100vw;
-  height: auto;
-  min-height: 100vh;
+  width: 100%;
   position: absolute;
-  opacity: 0.5;
-  border: solid red 5px;
+  z-index: 1;
+  background: radial-gradient(59.14% 70.68% at 50% 50.04%, #CDCDC3 0%, #8E8E8E 100%);
 }
 .linksPage .Background img {
+  opacity: 0.5;
+  margin-bottom: -0.7vh;
+}
+.linksPage .Background .Padrao {
+  width: 100%;
+  height: 100vh;
+}
+.linksPage .Background .PadraoMetade {
+  width: 100%;
+  height: 50vh;
+}
+.linksPage .Background .PadraoTerco {
+  width: 100%;
+  height: 25vh;
+}
+.linksPage .Background .PadraoQuarto {
+  width: 100%;
+  height: 12.5vh;
+}
+.linksPage main {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.linksPage main .logo {
+  width: 75%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.linksPage main .logo img {
+  height: 60%;
+}
+.linksPage main h2 {
+  width: 75%;
+  height: 5vh;
+  text-align: center;
+  color: #0A2749;
+  font-size: 1.35vw;
+  font-weight: 700;
+}
+.linksPage main .linksAtivos {
+  padding: 1vh 0 8vh;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.linksPage main .linksAtivos a {
+  margin: 2vh 0 4vh;
+  transform-style: preserve-3d;
+  width: 54%;
+  height: 23vh;
+  filter: drop-shadow(5px 10px 20px rgba(15, 31, 47, 0.35));
+}
+.linksPage main .linksAtivos a img {
+  border-radius: 2.5vw;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Login {
@@ -105,12 +175,13 @@ body footer p {
   width: 100%;
 }
 .Login .Background {
+  width: 100vw;
   position: absolute;
   opacity: 0.5;
 }
-.Login .Background img {
-  width: 100vw;
-  height: 100%;
+.Login .Background .Padrao {
+  width: 100%;
+  height: 100vh;
 }
 .Login main {
   width: 100%;
@@ -404,12 +475,13 @@ body footer p {
   width: 100%;
 }
 .recuperaSenha .Background {
+  width: 100vw;
   position: absolute;
   opacity: 0.5;
 }
-.recuperaSenha .Background img {
-  width: 100vw;
-  height: 100%;
+.recuperaSenha .Background .Padrao {
+  width: 100%;
+  height: 100vh;
 }
 .recuperaSenha main {
   width: 100%;
@@ -586,16 +658,13 @@ body footer p {
   overflow-x: hidden;
 }
 .TelaAdm .Background {
+  width: 100vw;
   position: absolute;
   opacity: 0.5;
-  height: 98vh;
-  width: 100vw;
 }
-.TelaAdm .Background img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.TelaAdm .Background .Padrao {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .TelaAdm .admHeader {
   padding: 1vw;

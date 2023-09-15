@@ -1,31 +1,3 @@
-<?php
-session_start();
-require_once("../conexao.php");
-
-$emailUserSessao = @$_SESSION['email_user'];
-    
-$query = $pdo->query("SELECT * FROM usuarios WHERE email = '$emailUserSessao' LIMIT 1");
-$dados = $query->fetchAll(PDO::FETCH_ASSOC);
-
-if(@count($dados) > 0){
-    $idAdm = $dados[0]['id'];
-    $nomeCompAdm = $dados[0]['nome_Completo'];
-    $emailAdm = $dados[0]['email'];
-    $telefoneContAdm = $dados[0]['telefone'];
-    $senhaAdm = $dados[0]['senha'];
-    $dataRegistroAdm = $dados[0]['data_Registro'];
-    
-    setlocale(LC_ALL, "pt_BR", "pt_BR.iso-8859-1", "pt_BR.utf-8", "portuguese");
-    $date = strftime(" %B de %Y", strtotime($dataRegistroAdm));
-
-} else {
-    $_SESSION['msg_perfilInvalido'] = "<div class='msgPerfilInvalido' style='left: 1.5vw !important; background:#CC101D;'>Usuario não encontrado!</div>";
-    header("Location: ../../links.php");
-}
-
-?> 
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -57,16 +29,16 @@ if(@count($dados) > 0){
 <body class="TelaAdm">
 
     <div class="Background">
-        <img src="../../assets/Padronagem.png">
+        <img class="Padrao" src="../../assets/Padronagem.png">
     </div>
 
     <header class="admHeader">
         <div class="Infos">
-            <a href="../../links.php" class="InfosImg">
+            <a href="../../links.html" class="InfosImg">
                 <img src="../../assets/NH_Logo.png">
             </a>
             <div class="nomeTagAdm">
-                <p class="nomeAdm"><?php echo $nomeCompAdm; ?></p>
+                <p class="nomeAdm">Administrador</p>
                 <span class="TagAdm">Painel Administrativo</span>
             </div>
         </div>
@@ -80,7 +52,7 @@ if(@count($dados) > 0){
 
     <main class="AdmBlock">
         <div class="addNewLink">
-            <a href='index.php?funcao=novo'>
+            <a href='#'>
                 <img src="../../assets/icones/Close.svg" onload="SVGInject(this)">
                 <span>Adicionar novo link</span>
             </a>
@@ -90,55 +62,12 @@ if(@count($dados) > 0){
             <div class="linksAtivos">
                 <h2>Links Ativos</h2>
                 <div class="links">
-                    <?php
-                        $query = $pdo->query("SELECT * FROM links where ativo = 'sim' ORDER BY id ASC");
-                        $dados = $query->fetchAll(PDO::FETCH_ASSOC);
-                        for ($i=0; $i < count($dados); $i++) {
-                            $id_Banner = $dados[$i]['id'];
-                            $img_Banner = $dados[$i]['img'];
-                            $nome_Banner = $dados[$i]['nome'];
-                            $link_Banner = $dados[$i]['link'];
-                            echo "
-                                <div class='BannerLink'>
-                                    <a target='_blank' class='banner' href='https://$link_Banner'>
-                                        <h3> $nome_Banner </h3>
-                                        <img src='../../assets/Banner_Links/$img_Banner'>
-                                    </a>
-                    
-                                    <a id='EditLink' href='index.php?funcao=editar&id=$id_Banner'>Editar</a>
-                                    <a id='DeletLink' href='index.php?funcao=excluir&id=$id_Banner'>Excluir</a>
-                                </div>
-                            ";
-                        }
-                    ?>
                 </div>
             </div>
     
             <div class="LinkDesativados">
                 <h2>Links Desativados</h2>
                 <div class="links">
-                    <?php
-                        $query = $pdo->query("SELECT * FROM links where ativo = 'nao' ORDER BY id ASC");
-                        $dados = $query->fetchAll(PDO::FETCH_ASSOC);
-                        for ($i=0; $i < count($dados); $i++) {
-                            $id_Banner = $dados[$i]['id'];
-                            $img_Banner = $dados[$i]['img'];
-                            $nome_Banner = $dados[$i]['nome'];
-                            $link_Banner = $dados[$i]['link'];
-                            $link_img = '../../assets/Banner_Links/' . $img_Banner;
-                            echo "
-                                <div class='BannerLink'>
-                                    <a target='_blank' class='banner' href='https://$link_Banner'>
-                                        <h3> $nome_Banner </h3>
-                                        <img src='../../assets/Banner_Links/$img_Banner'>
-                                    </a>
-                    
-                                    <a id='EditLink' href='index.php?funcao=editar&id=$id_Banner'>Editar</a>
-                                    <a id='DeletLink' href='index.php?funcao=excluir&id=$id_Banner'>Excluir</a>
-                                </div>
-                            ";
-                        }
-                    ?>
                 </div>
             </div>
         </div>
@@ -158,7 +87,7 @@ if(@count($dados) > 0){
                 </div>
                 <div class="modal-footer">
                     <button class="CancelaBtnModal" type="button" data-dismiss="modal">Cancelar</button>
-                    <a href="../logout.php" class="LogoutBtnModal" type="button">Sair</a>
+                    <a href="../index.html" class="LogoutBtnModal" type="button">Sair</a>
                 </div>
             </div>
         </div>
@@ -183,15 +112,15 @@ if(@count($dados) > 0){
                             <form id="formEditUser" class="editDados" method="POST">
                                 <h4>Alterar informações de conta:</h4>
                                 <div class="BlockBox">
-                                    <input type="text" name="nomeCompEdit" id="nomeCompEdit" maxlength="75" value="<?php echo $nomeCompAdm ?>" required>
+                                    <input type="text" name="nomeCompEdit" id="nomeCompEdit" maxlength="75" value="" required>
                                     <span>Nome completo:</span>
                                     <p class="lengthInput NomeCompEditInput"></p>
                                 </div>
                                 <div class="BlockBox">
-                                    <input type="text" name="telefoneContatoEdit" id="telefoneContatoEdit" value="<?php echo $telefoneContAdm ?>" required>
+                                    <input type="text" name="telefoneContatoEdit" id="telefoneContatoEdit" value="" required>
                                     <span>Telefone de contato:</span>
                                 </div>
-                                <input value="<?php echo @$_SESSION['id_user'] ?>" class="hide" type="hidden" name="idUser" id="idUser">
+                                <input value="" class="hide" type="hidden" name="idUser" id="idUser">
                                 <button class="SalvarBtnModal" id="SalvarEditUser" type="submit">Salvar</button>
                             </form>
                         </div>
@@ -364,24 +293,6 @@ if(@count($dados) > 0){
             </div>
         </div>
     </div>
-
-
-    
-<?php 
-
-if (@$_GET["funcao"] != null && @$_GET["funcao"] == "novo") {
-    echo "<script language='javascript'> $('#ModalDados').modal('show');</script>";
-}
-
-if (@$_GET["funcao"] != null && @$_GET["funcao"] == "editar") {
-    echo "<script language='javascript'> $('#ModalDados').modal('show');</script>";
-}
-
-if (@$_GET["funcao"] != null && @$_GET["funcao"] == "excluir") {
-    echo "<script language='javascript'> $('#ModalDeletLink').modal('show');</script>";
-}
-
-?>
 
 </body>
 </html>

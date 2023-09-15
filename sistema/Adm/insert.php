@@ -51,7 +51,7 @@ else{ $Banner = $nomeImgBanner; }
 $BannerImgTemp = @$_FILES['BannerEdit']['tmp_name']; 
 $extBanner = pathinfo($Banner, PATHINFO_EXTENSION);
 
-if($extBanner == 'png' or $extBanner == 'jpg' or $extBanner == 'jpeg' or $extBanner == 'gif'){ 
+if($extBanner == 'png' or $extBanner == 'jpg' or $extBanner == 'jpeg' or $extBanner == 'webp'){ 
     move_uploaded_file($BannerImgTemp, $caminhoBanner);
 }
 else{

@@ -58,10 +58,9 @@ body {
     }
 
     footer {
-        outline: 1px solid green;
+        z-index: 99;
         width: 100%;
-            outline: 1px solid red;
-            height: 4vh;
+        height: 3vh;
         position: absolute;
         bottom: 0;
         display: flex;

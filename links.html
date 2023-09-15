@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NH Inteligencia Empresarial | Página de links</title>
+    <link rel="icon" href="assets/NH_Logo.png" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Main files -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="linksPage">
+
+    <img class="SafeImgCover" src="assets/Padronagem.png">
+
+    <div class="Background">
+        <img class="Padrao" src="assets/Padronagem.png">
+        <img class="PadraoMetade" src="assets/Padronagem_Metade.png">
+    </div>
+
+    <main>
+        <div class="logo">
+            <img src="assets/Logo_Horizontal.png">
+        </div>
+        <h2> Links importantes - Clique na imagem para acessar </h2>
+
+        <div class="linksAtivos">
+
+            <a data-tilt target='_blank' class='BannerLink' href='https://wa.me/554199106460'>
+                <img src='assets/Banner_Links/Whats.webp'>
+            </a>
+
+            <a data-tilt target='_blank' class='BannerLink' href='https://www.instagram.com'>
+                <img src='assets/Banner_Links/Instagram.webp'>
+            </a>
+
+            <a data-tilt target='_blank' class='BannerLink' href='https://www.linkedin.com'>
+                <img src='assets/Banner_Links/linkedin.webp'>
+            </a>
+
+            <a data-tilt target='_blank' class='BannerLink' href='https://nhinteligencia.com.br'>
+                <img src='assets/Banner_Links/site.webp'>
+            </a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Todos os direitos reservados &copy; 2023.</p>
+    </footer>
+
+    <!-- tilt JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" ></script>
+
+    <!-- <script>
+        const body = document.body;
+        const html = document.documentElement;
+        const height = Math.max(body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+        if (window.screen.width == 1366 && window.screen.height == 768) {
+            //UMA TELA OU MENOS.
+            if(height <= 667){
+                document.querySelector('.Background').innerHTML = '<img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //DUAS TELAS
+            if(height > 668 || height == 752){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 753 || height == 835){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 836 || height == 916){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 917 || height == 1000){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 1001 || height == 1083){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1084 || height == 1166){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1167 || height == 1249){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1250 || height == 1333){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //TRES TELAS
+            if(height > 1334 || height == 1416){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1417 || height == 1499){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1500 || height == 1582){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1583 || height == 1666){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 1667 || height == 1749){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1750 || height == 1832){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1833 || height == 1915){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1716 || height == 2000){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+        }
+        if (window.screen.width == 1920 && window.screen.height == 1080) {
+            //UMA TELA OU MENOS.
+            if(height <= 979){
+                document.querySelector('.Background').innerHTML = '<img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //DUAS TELAS
+            if(height > 980 || height == 1099){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1100 || height == 1221){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1222 || height == 1340){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1341 || height == 1466){
+                console.log('entrou');
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 1467 || height == 1583){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1584 || height == 1708){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1709 || height == 1827){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1828 || height == 1955){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //TRES TELAS
+            if(height > 1956 || height == 2075){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2076 || height == 2197){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 2198 || height == 2317){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2317 || height == 2442){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 2443 || height == 2561){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2562 || height == 2684){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 2684 || height == 2803){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2804 || height == 2931){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+        }
+        if (window.screen.width == 1536 && window.screen.height == 864) {
+            //UMA TELA OU MENOS.
+            if(height <= 868){
+                document.querySelector('.Background').innerHTML = '<img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //DUAS TELAS
+            if(height > 869 || height == 970){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 971 || height == 1078){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1079 || height == 1184){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1185 || height == 1294){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 1295 || height == 1400){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1401 || height == 1508){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1509 || height == 1614){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1615 || height == 1726){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //TRES TELAS
+            if(height > 1727 || height == 1832){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1833 || height == 1940){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1941 || height == 2046){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2047 || height == 2156){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 2157 || height == 2262){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2263 || height == 2370){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 2371 || height == 2476){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2476 || height == 2588){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+        }
+        if (window.screen.width == 1440 && window.screen.height == 900) {
+            //UMA TELA OU MENOS.
+            if(height <= 905){
+                document.querySelector('.Background').innerHTML = '<img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //DUAS TELAS
+            if(height > 906 || height == 1010){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1011 || height == 1123){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1124 || height == 1233){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1234 || height == 1348){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 1349 || height == 1458){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1459 || height == 1570){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1571 || height == 1681){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1682 || height == 1798){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //TRES TELAS
+            if(height > 1799 || height == 1908){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1909 || height == 2020){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 2021 || height == 2131){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2132 || height == 2245){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 2246 || height == 2356){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2357 || height == 2468){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 2469 || height == 2578){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2579 || height == 2695){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+        }
+        if (window.screen.width == 1280 && window.screen.height == 720) {
+            //UMA TELA OU MENOS.
+            if(height <= 724){
+                document.querySelector('.Background').innerHTML = '<img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //DUAS TELAS
+            if(height > 725 || height == 804){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 805 || height == 899){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 900 || height == 988){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 989 || height == 1079){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 1080 || height == 1168){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1169 || height == 1258){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1259 || height == 1347){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1348 || height == 1439){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //TRES TELAS
+            if(height > 1440 || height == 1528){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1529 || height == 1618){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1619 || height == 1707){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1708 || height == 1798){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 1799 || height == 1887){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1888 || height == 1977){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1978 || height == 2066){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2067 || height == 2158){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+        }
+        if (window.screen.width == 1280 && window.screen.height == 1024) {
+            //UMA TELA OU MENOS.
+            if(height <= 1029){
+                document.querySelector('.Background').innerHTML = '<img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //DUAS TELAS
+            if(height > 1030 || height == 1149){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1150 || height == 1277){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1278 || height == 1402){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1403 || height == 1533){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 1534 || height == 1658){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1659 || height == 1786){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 1787 || height == 1911){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 1912 || height == 2045){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+            //TRES TELAS
+            if(height > 2046 || height == 2170){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2171 || height == 2298){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 2299 || height == 2423){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2424 || height == 2554){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png">';
+            }
+            if(height > 2555 || height == 2679){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2680 || height == 2807){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png">';
+            }
+            if(height > 2808 || height == 2931){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="PadraoMetade" src="assets/Padronagem_Metade.png"> <img class="PadraoTerco" src="assets/Padronagem_Terco.png"> <img class="PadraoQuarto" src="assets/Padronagem_Quarto.png">';
+            }
+            if(height > 2932 || height == 3066){
+                document.querySelector('.Background').innerHTML = 
+                '<img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png"> <img class="Padrao" src="assets/Padronagem.png">';
+            }
+        }
+    </script> -->
+</body>
+</html>

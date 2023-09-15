@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NH inteligencia empresarial | Recupera Senha</title>
+    <link rel="icon" href="../../assets/logos/Lg_laranja.png" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
+
+    <!-- Main files -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script defer src="js/script.js"></script>
+    <script src="../js/svg-inject.min.js"></script>
+</head>
+
+<body class="recuperaSenha">
+
+    <div class="Background">
+        <img class="Padrao" src="../assets/Padronagem.png">
+    </div>
+
+    <main>
+        <section class="recuperaSenhaBlock">
+            <form class="RecupSenhaBox" method="post">
+                <h2>Recuperação de senha</h2>
+
+                <div class="BlockBox senhaInput">
+                    <input type="password" name="novaSenhaUser" id="novaSenhaUser" maxlength="25" required>
+                    <span>Digite sua nova senha:</span>
+                    <i id="password_toggle" onclick="passwordToggle()" class="senhaIcon fa fa-eye-slash"></i>
+                    <p class="lengthInput ResetSenhaInput"></p>
+                </div>
+
+                <div class="BlockBox senhaInputNew">
+                    <input type="password" name="repetNovaSenhaUser" id="repetNovaSenhaUser" maxlength="25" required>
+                    <span>Digite novamente sua nova senha:</span>
+                    <i id="password_toggle_again" onclick="passwordToggleNew()" class="senhaIconAgain fa fa-eye-slash"></i>
+                    <p class="lengthInput repetResetSenhaInput"></p>
+                </div>
+
+                <input type="submit" id="ResetSenhaBtn" value="Atualizar senha" name="SendNovaSenha">
+                
+                <p> Lembrou da senha? <a href="index.html" class="VolteTelaLoginBtn"> Clique aqui </a> para conectar-se agora! </p>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

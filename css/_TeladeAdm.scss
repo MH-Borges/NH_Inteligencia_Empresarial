@@ -8,14 +8,12 @@
     overflow-x: hidden;
 
     .Background{
+        width: 100vw;
         position: absolute;
         opacity: 0.5;
-        height: 98vh;
-        width: 100vw;
-        img{
-            object-fit: cover;
+        .Padrao{
             width: 100%;
-            height: 100%;
+            height: 100vh;
         }
     }
 
